@@ -32,8 +32,10 @@ jobs:
             exclude:
               - nodejs_version: 18
                 operating_system: macos-latest
+              # - nodejs_version: 19
+              #   operating_system: ubuntu-latest   
               - nodejs_version: 19
-                operating_system: ubuntu-latest                
+                operating_system: macos-latest   
         runs-on: ${{ matrix.operating_system }}
         steps:
         - name: Checkout Repository
